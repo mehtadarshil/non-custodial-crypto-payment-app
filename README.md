@@ -1,22 +1,32 @@
-# Non-Custodial Crypto-to-Fiat Payment App
+# Crypto-to-UPI Mobile Product — Pre-launch
+A React Native/Expo fintech product under active development. This case study describes implementation work; it is not a live-product or regulatory-compliance claim. The intended wallet/delegation model remains under review.
 
-Mobile + API monorepo enabling non-custodial USDT-to-UPI conversion, moving stablecoin balances into local bank rails without a custodial intermediary.
+## My ownership
+Hands-on technical and delivery lead across mobile, API and dashboard development. I coordinate staff, stakeholder meetings, integration planning and release readiness while remaining responsible for implementation.
 
-**Role:** Full-Stack Developer · **Timeline:** 2026 · [Architecture](./ARCHITECTURE.md) · [Changelog](./CHANGELOG.md)
+## Mobile engineering
+- React Native/Expo application for iOS and Android.
+- Onboarding, identity-verification interfaces, QR scanning, quotes, payment confirmation/status, payment links and session handling.
+- Explicit loading, empty, error and feature-gated states.
+- Backend-connected payment and notification workflows.
+- Sentry error reporting and Maestro end-to-end flow configuration.
 
-## Overview
-Mobile + API monorepo enabling non-custodial USDT-to-UPI conversion, moving stablecoin balances into local bank rails without a custodial intermediary. Built as part of a broader portfolio of fintech / crypto work.
+## Systems and delivery
+- TypeScript/Hono API, PostgreSQL/Prisma and Redis-backed processing.
+- Database concurrency controls around payment operations.
+- Durable completion processing with retry and manual-review states.
+- Next.js dashboard.
+- GitHub Actions/EAS build and OTA configuration; Fastlane signing, build and TestFlight lanes.
 
-See [ARCHITECTURE.md](./ARCHITECTURE.md) for system diagrams and [docs/](./docs) for further detail.
+Release configuration is not proof of a completed store release. A live end-to-end product has not yet been verified.
 
-## Tech stack
-TypeScript · Mobile + API monorepo · USDT settlement · UPI integration
+## Current development
+I am also developing Python backend and AI-agent workflows for this client. That work is not live and is separate from the existing TypeScript payment API.
 
-## Notes
-Monorepo covering both the mobile client and backend API. A related early build (originally prototyped separately) fed into this project.
+## What this demonstrates
+Ownership across mobile interfaces, asynchronous backend work, integration reliability, release preparation and delivery coordination.
 
-## Screenshots
-See [screenshots/](./screenshots) — generic layout mockups (no real client branding/data reproduced).
+## Evidence and confidentiality
+Descriptive case study only; no proprietary source, credentials or client data are published. Existing screenshots are generic mockups. No first-in-market, live-payment, adoption or revenue claim is made.
 
----
-*Case study only. Client identity anonymized for confidentiality; no proprietary source code included.* See [LICENSE](./LICENSE).
+[Portfolio](https://mehtadarshil.site) · [Profile](https://github.com/mehtadarshil)
